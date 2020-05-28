@@ -12,11 +12,13 @@ Toolkit.run(async tools => {
     .slice(0, MAX_ITEMS)
     .map(item => `* [${item.title}](${item.link})`).join('\n')
   // Update the README.md
+  const existingReadme = await tools.github.repos.getReadme(tools.context.repo)
   await tools.github.repos.createOrUpdateFile({
     ...tools.context.repo,
     content: Buffer.from(newString).toString('base64'),
     message: 'Automatic README update',
-    path: 'README.md'
+    path: 'README.md',
+    sha: existingReadme.data.sha
   })
 }, {
   secrets: ['GITHUB_TOKEN', 'FEED_URL']
