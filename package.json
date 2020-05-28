@@ -1,0 +1,16 @@
+{
+  "name": "design-details-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "actions-toolkit": "^4.0.0",
+    "rss-parser": "^3.8.0"
+  }
+}
