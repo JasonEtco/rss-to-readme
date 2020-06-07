@@ -16,7 +16,7 @@ Toolkit.run(async tools => {
 
   // Update the section of our README
   await ReadmeBox.updateSection(newString, {
-    ...tools.repo,
+    ...tools.context.repo,
     token: tools.token,
     section: 'feed'
   })
