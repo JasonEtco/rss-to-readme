@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "actions-toolkit": "^4.0.0",
+    "readme-box": "^0.1.1",
     "rss-parser": "^3.8.0"
   }
 }
