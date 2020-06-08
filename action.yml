@@ -1,4 +1,4 @@
-name: RSS To README
+name: RSS to README
 description: Replaces a section of the repo's README with the contents of an RSS feed
 inputs:
   feed-url: 
