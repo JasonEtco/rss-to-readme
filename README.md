@@ -1,4 +1,4 @@
-<h3 align="center">📦🔖</h3>
+<h3 align="center">📡📝</h3>
 <h3 align="center">RSS to README Action</h3>
 <p align="center">A GitHub Action that updates a section of a README from an RSS feed.</p>
 
