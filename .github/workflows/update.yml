@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: JasonEtco/rss-to-readme@v1
         with:
-          feed-url: http://simplecast.fm/podcasts/1034/rss
+          feed-url: https://jasonet.co/rss.xml
           readme-section: feed
 
