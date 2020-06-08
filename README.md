@@ -28,11 +28,11 @@ jobs:
 
 ### Options
 
-**`feed-url`**:
+#### `feed-url`:
 
 The URL to an RSS feed. It's assumed that the RSS feed follow the standard format!
 
-**`readme-section`**:
+#### `readme-section`:
 
 The name of the section of your README to update. This uses [`JasonEtco/readme-box`](https://github.com/JasonEtco/readme-box) to replace a section of the README and update the file. Your README should contain HTML comments like this, where `example` is the the value of `readme-section`:
 
@@ -45,6 +45,10 @@ The name of the section of your README to update. This uses [`JasonEtco/readme-b
 ```
 
 You can inspect this repo's README to see it in use!
+
+#### `max` (default: 5)
+
+The maximum number of items to show from the RSS feed. Defaults to `5`!
 
 ### Example RSS feed:
 
