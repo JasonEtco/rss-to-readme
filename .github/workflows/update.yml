@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
-      - run: JasonEtco/rss-to-readme@v1
+      - uses: JasonEtco/rss-to-readme@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FEED_URL: http://simplecast.fm/podcasts/1034/rss
