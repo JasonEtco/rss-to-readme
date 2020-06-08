@@ -40,15 +40,6 @@ The name of the section of your README to update. This uses [`JasonEtco/readme-b
 ### Example RSS feed:
 
 <!--START_SECTION:feed-->
-...
-<!--END_SECTION:feed-->
-```
-
-You can inspect this repo's README to see it in use!
-
-### Example RSS feed:
-
-<!--START_SECTION:feed-->
 * [349: Black Lives Matter](https://designdetails.simplecast.com/episodes/349-black-lives-matter-czdMW9KM)
 * [348: Getting Unstuck](https://designdetails.simplecast.com/episodes/9ae0646c-9ae0646c)
 * [347: Overcoming Skill Gaps](https://designdetails.simplecast.com/episodes/0a523f70-0a523f70)
