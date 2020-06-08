@@ -3,12 +3,16 @@
   "private": true,
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx ncc build ./src/index.ts"
   },
   "license": "MIT",
   "dependencies": {
     "actions-toolkit": "^5.0.0",
     "readme-box": "^0.1.1",
     "rss-parser": "^3.8.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
   }
 }
