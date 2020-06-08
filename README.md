@@ -40,11 +40,11 @@ The name of the section of your README to update. This uses [`JasonEtco/readme-b
 ### Example RSS feed:
 
 <!--START_SECTION:feed-->
-* [349: Black Lives Matter](https://designdetails.simplecast.com/episodes/349-black-lives-matter-czdMW9KM)
-* [348: Getting Unstuck](https://designdetails.simplecast.com/episodes/9ae0646c-9ae0646c)
-* [347: Overcoming Skill Gaps](https://designdetails.simplecast.com/episodes/0a523f70-0a523f70)
-* [346: Quality Software](https://designdetails.simplecast.com/episodes/94edbd03-94edbd03)
-* [345: Developing Taste](https://designdetails.simplecast.com/episodes/3d318a0d-3d318a0d)
+* [Probot App or GitHub Action? (Updated)](https://jasonet.co/posts/probot-app-or-github-action-v2/)
+* [Build your own Probot](https://jasonet.co/posts/build-your-own-probot/)
+* [New features of GitHub Actions v2](https://jasonet.co/posts/new-features-of-github-actions/)
+* [Run your GitHub Actions workflow on a schedule](https://jasonet.co/posts/scheduled-actions/)
+* [Just enough Docker](https://jasonet.co/posts/just-enough-docker/)
 <!--END_SECTION:feed-->
 
 > This started as a little proof-of-concept for @brianlovin!
