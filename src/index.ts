@@ -15,6 +15,10 @@ Toolkit.run<Inputs>(async tools => {
   // Fetch feed
   const feed = await parser.parseURL(tools.inputs['feed-url'])
 
+  if (!feed.items) {
+    throw new Error('feed.items was not found!')
+  }
+
   // Create our new list
   const newString = feed.items
     .slice(0, parseInt(tools.inputs.max, 10)) 
