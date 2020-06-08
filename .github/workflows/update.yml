@@ -12,7 +12,6 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - uses: JasonEtco/rss-to-readme@v1
         with:
           feed-url: https://jasonet.co/rss.xml
