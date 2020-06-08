@@ -1,6 +1,6 @@
-const { Toolkit } = require('actions-toolkit')
-const { ReadmeBox } = require('readme-box')
-const Parser = require('rss-parser')
+import { Toolkit } from 'actions-toolkit'
+import { ReadmeBox } from 'readme-box'
+import Parser from 'rss-parser'
 const parser = new Parser()
 
 const MAX_ITEMS = 30

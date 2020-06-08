@@ -1,14 +1,11 @@
 {
-  "name": "design-details-updater",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "rss-to-readme-action",
+  "private": true,
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "actions-toolkit": "^4.0.0",
     "readme-box": "^0.1.1",
