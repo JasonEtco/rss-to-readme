@@ -1,0 +1,20 @@
+name: RSS To README
+description: Replaces a section of the repo's README with the contents of an RSS feed
+inputs:
+  feed-url: 
+    required: true
+    description: A URL to an RSS feed.
+  readme-section:
+    required: true
+    description: The name of the section of the README to update.
+  max:
+    default: 5
+    description: The maximum number of RSS feed items to show.
+  github_token:
+    default: ${{ github.token }}
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: activity
+  color: red
