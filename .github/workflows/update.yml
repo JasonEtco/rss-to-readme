@@ -15,5 +15,5 @@ jobs:
       - uses: JasonEtco/rss-to-readme@v1
         with:
           feed-url: https://jasonet.co/rss.xml
-          readme-section: feed
+          readme-section: example
 
