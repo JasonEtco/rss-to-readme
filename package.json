@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "actions-toolkit": "^5.0.0",
-    "readme-box": "^0.1.1",
+    "readme-box": "^0.1.2",
     "rss-parser": "^3.8.0"
   },
   "devDependencies": {
