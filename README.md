@@ -34,14 +34,14 @@ The URL to an RSS feed. It's assumed that the RSS feed follow the standard forma
 
 #### `readme-section`:
 
-The name of the section of your README to update. This uses [`JasonEtco/readme-box`](https://github.com/JasonEtco/readme-box) to replace a section of the README and update the file. Your README should contain HTML comments like this, where `example` is the the value of `readme-section`:
+The name of the section of your README to update. This uses [`JasonEtco/readme-box`](https://github.com/JasonEtco/readme-box) to replace a section of the README and update the file. Your README should contain HTML comments like this, where `feed` is the the value of `readme-section`:
 
 ```html
 ### Example RSS feed:
 
-<!--START_SECTION:example-->
+<!--START_SECTION:feed-->
 ...
-<!--END_SECTION:example-->
+<!--END_SECTION:feed-->
 ```
 
 You can inspect this repo's README to see it in use!
