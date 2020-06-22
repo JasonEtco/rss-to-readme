@@ -52,7 +52,15 @@ The maximum number of items to show from the RSS feed. Defaults to `5`!
 
 #### `template` (default: `"* [{{ title }}]({{ link }}))"`)
 
-The template to use when rendering each item in the feed. These will be joined by a newline (`\n`).
+You can provide a [Mustache](https://github.com/janl/mustache.js) template to use when rendering each item in the feed. These will be joined by a newline (`\n`). For example:
+
+```yaml
+- uses: JasonEtco/rss-to-readme@v1
+  with:
+    feed-url: https://jasonet.co/rss.xml
+    template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
+```
+
 
 ### Example RSS feed:
 
