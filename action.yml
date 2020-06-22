@@ -10,6 +10,9 @@ inputs:
   max:
     default: 5
     description: The maximum number of RSS feed items to show.
+  template:
+    default: '* [{{ title }}]({{ link }})'
+    description: The template to use for each item in the RSS feed. These are joined by a new line.
   github_token:
     default: ${{ github.token }}
 runs:
