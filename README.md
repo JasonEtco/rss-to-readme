@@ -50,6 +50,10 @@ You can inspect this repo's README to see it in use!
 
 The maximum number of items to show from the RSS feed. Defaults to `5`!
 
+#### `template` (default: `"* [{{ title }}]({{ link }}))"`)
+
+The template to use when rendering each item in the feed. These will be joined by a newline (`\n`).
+
 ### Example RSS feed:
 
 <!--START_SECTION:example-->
