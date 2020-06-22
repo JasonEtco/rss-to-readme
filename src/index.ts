@@ -1,6 +1,7 @@
 import { Toolkit } from 'actions-toolkit'
 import { ReadmeBox } from 'readme-box'
 import Parser from 'rss-parser'
+import mustache from 'mustache'
 
 const parser = new Parser()
 
@@ -8,6 +9,7 @@ interface Inputs {
   'feed-url': string
   'readme-section': string
   max: string
+  template: string
   [key: string]: string
 }
 
@@ -22,7 +24,7 @@ Toolkit.run<Inputs>(async tools => {
   // Create our new list
   const newString = feed.items
     .slice(0, parseInt(tools.inputs.max, 10)) 
-    .map(item => `* [${item.title}](${item.link})`).join('\n')
+    .map(item => mustache.render(tools.inputs.template, item)).join('\n')
 
   // Update the section of our README
   await ReadmeBox.updateSection(newString, {
