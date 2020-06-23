@@ -65,11 +65,11 @@ You can provide a [Mustache](https://github.com/janl/mustache.js) template to us
 ### Example RSS feed:
 
 <!--START_SECTION:example-->
-* [Probot App or GitHub Action? (Updated)](https://jasonet.co/posts/probot-app-or-github-action-v2/)
-* [Build your own Probot](https://jasonet.co/posts/build-your-own-probot/)
-* [New features of GitHub Actions v2](https://jasonet.co/posts/new-features-of-github-actions/)
-* [Run your GitHub Actions workflow on a schedule](https://jasonet.co/posts/scheduled-actions/)
-* [Just enough Docker](https://jasonet.co/posts/just-enough-docker/)
+* [Probot App or GitHub Action? (Updated)](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;probot-app-or-github-action-v2&#x2F;)
+* [Build your own Probot](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;build-your-own-probot&#x2F;)
+* [New features of GitHub Actions v2](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;new-features-of-github-actions&#x2F;)
+* [Run your GitHub Actions workflow on a schedule](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;scheduled-actions&#x2F;)
+* [Just enough Docker](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;just-enough-docker&#x2F;)
 <!--END_SECTION:example-->
 
 > This started as a little proof-of-concept for @brianlovin!
