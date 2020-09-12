@@ -61,6 +61,13 @@ You can provide a [Mustache](https://github.com/janl/mustache.js) template to us
     template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
 ```
 
+#### `pre_template` (default: ``)
+
+Any additional pre template to use before add the template. This could be used to open table header for instance.
+
+#### `post_template` (default: ``)
+
+Any additional post template to use after add the template.
 
 ### Example RSS feed:
 
