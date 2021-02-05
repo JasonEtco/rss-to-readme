@@ -61,6 +61,9 @@ You can provide a [Mustache](https://github.com/janl/mustache.js) template to us
     template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
 ```
 
+#### `branch` (default: master)
+
+You can provide the target branch to update instead of the default.
 
 ### Example RSS feed:
 

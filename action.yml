@@ -1,7 +1,7 @@
 name: RSS to README
 description: Replaces a section of the repo's README with the contents of an RSS feed
 inputs:
-  feed-url: 
+  feed-url:
     required: true
     description: A URL to an RSS feed.
   readme-section:
@@ -15,6 +15,9 @@ inputs:
     description: The template to use for each item in the RSS feed. These are joined by a new line.
   github_token:
     default: ${{ github.token }}
+  branch:
+    default: master
+    description: The target branch to update.
 runs:
   using: node12
   main: dist/index.js
