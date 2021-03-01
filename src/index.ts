@@ -10,6 +10,7 @@ interface Inputs {
   'readme-section': string
   max: string
   template: string
+  branch: string
   [key: string]: string
 }
 
@@ -30,6 +31,7 @@ Toolkit.run<Inputs>(async tools => {
   await ReadmeBox.updateSection(newString, {
     ...tools.context.repo,
     token: tools.token,
-    section: tools.inputs['readme-section']
+    section: tools.inputs['readme-section'],
+    branch: this.inputs.branch
   })
 })
