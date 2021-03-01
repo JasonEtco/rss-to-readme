@@ -16,7 +16,7 @@ inputs:
   github_token:
     default: ${{ github.token }}
   branch:
-    default: ${{ github.repository.default_branch }}
+    default: ${{ github.event.repository.default_branch }}
     description: The target branch to update.
 runs:
   using: node12
