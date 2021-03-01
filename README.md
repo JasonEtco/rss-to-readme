@@ -61,7 +61,7 @@ You can provide a [Mustache](https://github.com/janl/mustache.js) template to us
     template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
 ```
 
-#### `branch` (default: master)
+#### `branch` (default: github.repository.default_branch)
 
 You can provide the target branch to update instead of the default.
 
