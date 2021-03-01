@@ -16,4 +16,5 @@ jobs:
         with:
           feed-url: https://jasonet.co/rss.xml
           readme-section: example
+          branch: main
 
