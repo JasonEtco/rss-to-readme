@@ -18,6 +18,10 @@ inputs:
   branch:
     default: ${{ github.event.repository.default_branch }}
     description: The target branch to update.
+  empty-commits:
+    default: 'true'
+    description: set to `false` to disallow empty commits when there are no changes
+    required: false
 runs:
   using: node12
   main: dist/index.js
