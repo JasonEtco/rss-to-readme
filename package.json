@@ -10,7 +10,7 @@
   "dependencies": {
     "actions-toolkit": "^6.0.1",
     "mustache": "^4.1.0",
-    "readme-box": "^0.2.0",
+    "readme-box": "^1.0.0",
     "rss-parser": "^3.12.0"
   },
   "devDependencies": {

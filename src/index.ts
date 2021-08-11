@@ -8,6 +8,7 @@ const parser = new Parser()
 interface Inputs {
   'feed-url': string
   'readme-section': string
+  'empty-commits': string
   max: string
   template: string
   branch: string
@@ -32,6 +33,7 @@ Toolkit.run<Inputs>(async tools => {
     ...tools.context.repo,
     token: tools.token,
     section: tools.inputs['readme-section'],
-    branch: tools.inputs.branch || tools.context.payload.repository?.default_branch
+    branch: tools.inputs.branch || tools.context.payload.repository?.default_branch,
+    emptyCommits: tools.inputs['empty-commits'] !== 'false'
   })
 })
