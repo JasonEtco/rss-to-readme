@@ -28,8 +28,7 @@ async function getReadme(tools: Toolkit, branch: string, path: string) {
 
   return {
     content: decoded,
-    sha: data.sha,
-    path: data.path
+    sha: data.sha
   }
 }
 
@@ -46,8 +45,10 @@ Toolkit.run<Inputs>(async tools => {
     .slice(0, parseInt(tools.inputs.max, 10)) 
     .map(item => mustache.render(tools.inputs.template, item)).join('\n')
 
+  // Prepare some options
   const emptyCommits = tools.inputs['empty-commits'] !== 'false'
   const branch = tools.inputs.branch || tools.context.payload.repository?.default_branch
+  const path = tools.inputs.path || 'README.md'
 
   // Update the section of our README
   const box = new ReadmeBox({
@@ -57,7 +58,7 @@ Toolkit.run<Inputs>(async tools => {
   })
 
   // Get the README
-  const { content: oldContents, sha, path } = await getReadme(tools, box.branch, tools.inputs.path || 'README.md')
+  const { content: oldContents, sha } = await getReadme(tools, box.branch, path)
 
   // Replace the old contents with the new
   const replaced = box.replaceSection({
