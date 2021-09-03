@@ -1,9 +1,13 @@
 import { Toolkit } from 'actions-toolkit'
 import { ReadmeBox } from 'readme-box'
 import Parser from 'rss-parser'
-import mustache from 'mustache'
+import nunjucks from 'nunjucks'
+// @ts-ignore
+import dateFilter from 'nunjucks-date-filter'
 
 const parser = new Parser()
+const env = nunjucks.configure({ autoescape: false })
+env.addFilter('date', dateFilter)
 
 interface Inputs {
   'feed-url': string
@@ -43,7 +47,7 @@ Toolkit.run<Inputs>(async tools => {
   // Create our new list
   const newString = feed.items
     .slice(0, parseInt(tools.inputs.max, 10)) 
-    .map(item => mustache.render(tools.inputs.template, item)).join('\n')
+    .map(item => env.renderString(tools.inputs.template, item)).join('\n')
 
   // Prepare some options
   const emptyCommits = tools.inputs['empty-commits'] !== 'false'
