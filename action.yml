@@ -13,6 +13,9 @@ inputs:
   template:
     default: '* [{{ title }}]({{ link }})'
     description: The template to use for each item in the RSS feed. These are joined by a new line.
+  path:
+    default: 'README.md'
+    description: The path to the README file
   github_token:
     default: ${{ github.token }}
   branch:

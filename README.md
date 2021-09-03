@@ -65,6 +65,10 @@ You can provide a [Mustache](https://github.com/janl/mustache.js) template to us
 
 You can provide the target branch to update instead of the default.
 
+#### `path` (default: 'README.md')
+
+Path to the README file to update.
+
 ### Example RSS feed:
 
 <!--START_SECTION:example-->
