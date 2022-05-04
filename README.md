@@ -46,6 +46,10 @@ The name of the section of your README to update. This uses [`JasonEtco/readme-b
 
 You can inspect this repo's README to see it in use!
 
+#### `empty-commits`: (default: true)
+
+Set this to `false` to not commit anything when this action run but the section didn't change.
+
 #### `max` (default: 5)
 
 The maximum number of items to show from the RSS feed. Defaults to `5`!
