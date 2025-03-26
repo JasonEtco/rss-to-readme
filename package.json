@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "actions-toolkit": "^6.0.1",
-    "nunjucks": "^3.2.3",
+    "nunjucks": "^3.2.4",
     "nunjucks-date-filter": "^0.1.1",
     "readme-box": "^1.0.0",
     "rss-parser": "^3.12.0"
