@@ -76,11 +76,11 @@ Path to the README file to update.
 ### Example RSS feed:
 
 <!--START_SECTION:example-->
-* [CODEOWNERS-driven file organization](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;codeowners-driven-organization&#x2F;)
-* [Remix first impressions](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;remix-first-impressions&#x2F;)
-* [On &quot;Spike work&quot;](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;on-spike-work&#x2F;)
-* [Assorted thoughts on documentation](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;thoughts-on-docs&#x2F;)
-* [On &quot;lurking&quot;](https:&#x2F;&#x2F;jasonet.co&#x2F;posts&#x2F;on-lurking&#x2F;)
+* [CODEOWNERS-driven file organization](https://jasonet.co/posts/codeowners-driven-organization/)
+* [Remix first impressions](https://jasonet.co/posts/remix-first-impressions/)
+* [On "Spike work"](https://jasonet.co/posts/on-spike-work/)
+* [Assorted thoughts on documentation](https://jasonet.co/posts/thoughts-on-docs/)
+* [On "lurking"](https://jasonet.co/posts/on-lurking/)
 <!--END_SECTION:example-->
 
 > This started as a little proof-of-concept for @brianlovin!
