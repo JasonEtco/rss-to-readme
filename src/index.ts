@@ -38,7 +38,22 @@ async function getReadme(tools: Toolkit, branch: string, path: string) {
 
 Toolkit.run<Inputs>(async tools => {
   // Fetch feed
-  const feed = await parser.parseURL(tools.inputs['feed-url'])
+  const feedUrl = tools.inputs['feed-url']
+  let feed
+  try {
+    feed = await parser.parseURL(feedUrl)
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error)
+    const timeout = (parser as any).options.timeout
+    if (message.includes('timed out')) {
+      throw new Error(`Request to ${feedUrl} timed out after ${timeout}ms`)
+    }
+    const statusMatch = message.match(/Status code (\d+)/)
+    if (statusMatch) {
+      throw new Error(`Error fetching ${feedUrl}: received status code ${statusMatch[1]}`)
+    }
+    throw new Error(`Failed to fetch RSS feed from ${feedUrl}: ${message}`)
+  }
 
   if (!feed.items) {
     throw new Error('feed.items was not found!')
